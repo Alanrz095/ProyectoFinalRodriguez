@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacé crecer tu plata!</title>
+    <link rel="shortcut icon" href="images/icono.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Heebo:wght@300&family=Inconsolata&family=Pacifico&family=Quicksand:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="containe-fluid">
+    <header>
+        <div id="portada">
+            <img src="images/portada.jpg" alt="" class="image-fluid">
+        </div>
+    </header>
+    <main class="position-relative" id="cuerpo">
+        <div class="simulador position-absolute top-50 start-50 translate-middle" id="contenedor">
+            <h1 data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500">¡Calculá el interés de tu dinero y empezá a invertir!</h1>
+            <form id="formulario" method="post">
+                <label for="entidadBancaria">Banco:</label><br>
+                <input type="text" id="entidadBancaria" name="banco" value="" placeholder="Banco a depositar" required><br><br>
+                <label for="cuentaBancaria">CBU:</label><br>
+                <input type="number" id="cuentaBancaria" name="cbu" placeholder="Cuenta a depositar" required><br><br>
+                <label for="plataInversion">Dinero a invertir:</label><br>
+                <input type="number" id="plataInversion" name="capital" min="10000" required><br><br>
+                <label for="plazoFijo">Plazo:</label><br>
+                <select class="form-select w-25 d-inline" id="plazoFijo">
+                    <option value="30">30 días</option>
+                    <option value="60">60 días</option>
+                    <option value="90">90 días</option>
+                    <option value="120">120 días</option>
+                </select>
+                <input type="submit" value="Calcular" class="btn btn-secondary me-md-2" id="boton">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p class="pie">
+            ©Copyright Alan Rodriguez
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
